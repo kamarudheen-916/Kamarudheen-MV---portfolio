@@ -185,7 +185,7 @@ export default function Hero() {
                 View Projects
               </Button>
               <Button
-                href="/cv/kamarudheen-mv-cv.pdf"
+                href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/cv/kamarudheen-mv-cv.pdf`}
                 download
                 size="lg"
                 variant="outline"
@@ -252,7 +252,7 @@ export default function Hero() {
                   Recommended: square image, minimum 600x600px
                 */}
                 <img
-                  src="/profile/profile-placeholder.png"
+                  src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/profile/profile-placeholder.png`}
                   alt="Kamarudheen MV — Full Stack Developer"
                   className="w-full h-full object-cover"
                   onError={(e) => {

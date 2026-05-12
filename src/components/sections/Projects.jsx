@@ -37,7 +37,7 @@ function ProjectCard({ project, index }) {
             <AnimatePresence mode="wait">
               <motion.img
                 key={imgIndex}
-                src={imageList[imgIndex]}
+                src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${imageList[imgIndex]}`}
                 alt={`${project.title} View ${imgIndex + 1}`}
                 initial={{ opacity: 0, scale: 1.05 }}
                 animate={{ opacity: 1, scale: 1 }}

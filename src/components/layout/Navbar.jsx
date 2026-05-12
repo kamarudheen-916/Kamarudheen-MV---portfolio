@@ -87,7 +87,7 @@ export default function Navbar() {
           {/* CTA + Mobile Hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="/cv/kamarudheen-mv-cv.pdf"
+              href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/cv/kamarudheen-mv-cv.pdf`}
               download
               className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-inter font-medium
                 text-accent-blue border border-accent-blue/30 rounded-lg
@@ -137,7 +137,7 @@ export default function Navbar() {
               ))}
               <div className="h-px bg-border-subtle my-1" />
               <a
-                href="/cv/kamarudheen-mv-cv.pdf"
+                href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/cv/kamarudheen-mv-cv.pdf`}
                 download
                 className="text-center py-3 text-sm font-inter font-semibold text-bg-primary bg-accent-blue rounded-xl"
                 onClick={() => setMenuOpen(false)}
