@@ -142,7 +142,7 @@ export default function Hero() {
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold font-inter
                 border border-accent-blue/25 bg-accent-blue/8 text-accent-blue tracking-widest uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent-blue animate-pulse-glow" />
-                Available for Work · UAE
+                Available for Work · Open to UAE Relocation
               </span>
             </motion.div>
 
@@ -288,7 +288,7 @@ export default function Hero() {
                 className="absolute -right-8 bottom-8 glass rounded-2xl px-4 py-2.5 shadow-card border border-border-subtle"
               >
                 <p className="text-accent-blue font-heading font-bold text-lg leading-none">UAE</p>
-                <p className="text-text-secondary text-xs font-inter mt-0.5">Based</p>
+                <p className="text-text-secondary text-xs font-inter mt-0.5">Ready</p>
               </motion.div>
 
               <motion.div

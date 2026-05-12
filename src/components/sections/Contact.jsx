@@ -26,8 +26,8 @@ export default function Contact() {
     {
       icon: <MessageSquare size={20} />,
       label: "WhatsApp",
-      value: "+971 522 069 628",
-      href: "https://wa.me/971522069628",
+      value: "+91 98476 78427",
+      href: "https://wa.me/919847678427",
       color: "hover:text-[#25D366]"
     },
     {

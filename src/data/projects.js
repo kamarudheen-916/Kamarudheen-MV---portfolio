@@ -12,9 +12,9 @@ export const projects = [
     subtitle: 'Enterprise CRM Platform',
     category: 'CRM / Business Platform',
     description:
-      'A full-featured enterprise CRM and admin dashboard system built for business process management. Includes lead tracking, customer management, role-based access control, pricing configurations, and real-time analytics dashboards designed for operational efficiency.',
+      'Developed and maintained a CRM-enabled admin dashboard for a loyalty point mobile application platform. Built the admin dashboard from scratch using React.js, Nest.js, and PostgreSQL.',
     longDescription:
-      'Engineered with a NestJS microservices backend and React-powered frontend. Features include advanced role management, lead pipeline visualization, invoice generation, and a comprehensive reporting module.',
+      'Developed and maintained a CRM-enabled admin dashboard for a loyalty point mobile application platform. Built the admin dashboard from scratch and continued existing production workflows using React.js, Nest.js, PostgreSQL, and Drizzle ORM.',
     image: '/projects/bizzatom/Screenshot (181).png',
     images: [
       '/projects/bizzatom/Screenshot (181).png',
@@ -31,7 +31,7 @@ export const projects = [
     ],
     // Fallback gradient when image is not available
     gradient: 'from-blue-900/60 via-slate-900/80 to-slate-950',
-    tech: ['React', 'NestJS', 'PostgreSQL', 'Prisma', 'TailwindCSS', 'REST API'],
+    tech: ['React.js', 'Nest.js', 'PostgreSQL', 'Drizzle ORM', 'TailwindCSS'],
     liveUrl: '#',       // Replace with live URL when available
     githubUrl: '#',     // Replace with GitHub repo URL
     featured: true,
@@ -43,9 +43,9 @@ export const projects = [
     subtitle: 'HR & Operations Platform',
     category: 'Internal Tools / HR',
     description:
-      'A comprehensive internal staff management platform for Leewaa, covering employee records, attendance tracking, leave management, service request workflows, and department-level reporting — all within a polished multi-role dashboard.',
+      'Developed a complete internal staff management platform from scratch to deployment using modern responsive infrastructure.',
     longDescription:
-      'Built with React frontend and NestJS backend, deployed on DigitalOcean. Includes technician task history, FCM push notifications, and water filter maintenance scheduling.',
+      'Developed a complete internal staff management platform from scratch to deployment using React.js, Nest.js, PostgreSQL, and Prisma ORM.',
     image: '/projects/leewaa-staff/Screenshot (201).png',
     images: [
       '/projects/leewaa-staff/Screenshot (201).png',
@@ -58,7 +58,7 @@ export const projects = [
       '/projects/leewaa-staff/Screenshot (208).png',
     ],
     gradient: 'from-indigo-900/60 via-slate-900/80 to-slate-950',
-    tech: ['React', 'NestJS', 'PostgreSQL', 'Drizzle ORM', 'DigitalOcean', 'FCM'],
+    tech: ['React.js', 'Nest.js', 'PostgreSQL', 'Prisma ORM', 'DigitalOcean'],
     liveUrl: '#',
     githubUrl: '#',
     featured: true,
@@ -70,9 +70,9 @@ export const projects = [
     subtitle: 'Full-Stack E-Commerce Solution',
     category: 'E-Commerce',
     description:
-      'A premium multi-brand e-commerce storefront for Leewaa with a full product catalog, cart, wishlist, checkout, order management, and branded invoice system. Features a React-powered customer portal with real-time inventory sync.',
+      'Built a full-stack e-commerce platform with customer-facing storefront and complete admin management system. Integrated Razorpay payments and real-time Socket.IO.',
     longDescription:
-      'Deployed on DigitalOcean with PM2 process management. Integrated external shop product API for cross-domain product display. Branded for premium Ayurvedic identity with consistent dark/light theme support.',
+      'Built a full-stack e-commerce platform with customer-facing storefront and complete admin management system. Integrated Razorpay payments and real-time communication using Socket.IO.',
     image: '/projects/leewaa-shop/Screenshot (192).png',
     images: [
       '/projects/leewaa-shop/Screenshot (192).png',
@@ -86,7 +86,7 @@ export const projects = [
       '/projects/leewaa-shop/Screenshot (200).png',
     ],
     gradient: 'from-emerald-900/60 via-slate-900/80 to-slate-950',
-    tech: ['React', 'NestJS', 'PostgreSQL', 'Prisma', 'TailwindCSS', 'DigitalOcean'],
+    tech: ['React.js', 'Nest.js', 'Razorpay', 'Socket.IO', 'TailwindCSS'],
     liveUrl: 'https://shop.leewaa.in/',
     githubUrl: '#',
     featured: true,
@@ -132,13 +132,13 @@ export const projects = [
     subtitle: 'Live Bidding & Auction SaaS',
     category: 'Marketplace / Auction',
     description:
-      'A real-time auction and bidding platform for the UAE market. Features live auction rooms, bid management, item listing workflows, buyer/seller dashboards, and payment integration for seamless luxury goods transactions.',
+      'Online auction platform focused on real-time bidding and secure transaction workflows. Developed sophisticated frontend/backend modules and integrated payment systems.',
     longDescription:
-      'Architected for high concurrency with WebSocket-based live bidding. Includes comprehensive seller onboarding, item valuation tools, and an administrative control panel with full auction lifecycle management.',
+      'Worked on a UAE-based online auction platform focused on real-time bidding and secure transaction workflows. Developed frontend and backend modules, implemented real-time communication using Socket.IO, and integrated Stripe payment systems.',
     image: '/projects/alletre/preview.jpg',
     images: [],
     gradient: 'from-violet-900/60 via-slate-900/80 to-slate-950',
-    tech: ['React', 'NestJS', 'PostgreSQL', 'WebSockets', 'Prisma', 'UAE Market'],
+    tech: ['React', 'Node.js', 'Socket.IO', 'Stripe', 'MERN'],
     liveUrl: '#',
     githubUrl: '#',
     featured: false,

@@ -9,10 +9,10 @@ export const techCategories = [
     icon: '⬡',
     techs: [
       { name: 'React.js', level: 95, description: 'Component architecture, hooks, state management' },
+      { name: 'TypeScript', level: 85, description: 'Type-safe JavaScript development' },
+      { name: 'Redux Toolkit', level: 88, description: 'Predictable state container for JS apps' },
       { name: 'TailwindCSS', level: 92, description: 'Utility-first CSS, custom design systems' },
-      { name: 'Framer Motion', level: 85, description: 'Advanced animations and transitions' },
-      { name: 'TypeScript', level: 80, description: 'Type-safe JavaScript development' },
-      { name: 'Next.js', level: 72, description: 'Server-side rendering and static generation' },
+      { name: 'HTML5 / CSS3', level: 95, description: 'Semantic web design and presentation' },
     ],
   },
   {
@@ -20,11 +20,11 @@ export const techCategories = [
     label: 'Backend',
     icon: '⬡',
     techs: [
-      { name: 'NestJS', level: 90, description: 'Scalable Node.js enterprise framework' },
+      { name: 'Nest.js', level: 90, description: 'Scalable Node.js enterprise framework' },
       { name: 'Node.js', level: 92, description: 'Server-side JavaScript runtime' },
+      { name: 'PHP / Laravel', level: 80, description: 'Server-side architecture and routing' },
       { name: 'REST APIs', level: 95, description: 'API design, versioning, documentation' },
-      { name: 'WebSockets', level: 78, description: 'Real-time bidirectional communication' },
-      { name: 'JWT Auth', level: 88, description: 'Authentication and authorization flows' },
+      { name: 'Socket.IO', level: 88, description: 'Real-time bidirectional communication' },
     ],
   },
   {
@@ -34,21 +34,32 @@ export const techCategories = [
     techs: [
       { name: 'PostgreSQL', level: 88, description: 'Relational database design and optimization' },
       { name: 'Prisma ORM', level: 90, description: 'Type-safe database access and migrations' },
-      { name: 'Drizzle ORM', level: 82, description: 'Lightweight TypeScript ORM' },
-      { name: 'Redis', level: 65, description: 'Caching and session management' },
-      { name: 'MySQL', level: 75, description: 'Relational database management' },
+      { name: 'Drizzle ORM', level: 85, description: 'Lightweight TypeScript ORM' },
+      { name: 'MongoDB', level: 82, description: 'NoSQL document database management' },
+      { name: 'SQL', level: 90, description: 'Standard query language structures' },
+    ],
+  },
+  {
+    id: 'cms',
+    label: 'CMS & Web',
+    icon: '⬡',
+    techs: [
+      { name: 'WordPress', level: 85, description: 'Core theme and plugin configuration' },
+      { name: 'WooCommerce', level: 80, description: 'E-commerce store infrastructure' },
+      { name: 'Elementor', level: 90, description: 'Visual site building and component layout' },
+      { name: 'Customization', level: 85, description: 'Tailored template modifications' },
     ],
   },
   {
     id: 'deployment',
-    label: 'Deployment',
+    label: 'DevOps',
     icon: '⬡',
     techs: [
       { name: 'DigitalOcean', level: 85, description: 'VPS deployment, droplets, managed databases' },
-      { name: 'AWS', level: 72, description: 'S3, EC2, and cloud infrastructure' },
-      { name: 'PM2', level: 88, description: 'Node.js process management in production' },
+      { name: 'AWS', level: 75, description: 'Cloud infrastructure and S3 storage' },
+      { name: 'Linux Server', level: 82, description: 'Environment setup and management' },
       { name: 'Nginx', level: 80, description: 'Reverse proxy and web server configuration' },
-      { name: 'Docker', level: 68, description: 'Containerization and orchestration' },
+      { name: 'Git & GitHub', level: 90, description: 'Version control and CI/CD workflows' },
     ],
   },
   {
@@ -58,15 +69,14 @@ export const techCategories = [
     techs: [
       { name: 'ChatGPT', level: 95, description: 'AI-assisted development and debugging' },
       { name: 'Claude', level: 92, description: 'Complex code review and architecture planning' },
-      { name: 'Gemini', level: 88, description: 'Multimodal AI for UI/UX and code generation' },
-      { name: 'GitHub Copilot', level: 85, description: 'Inline code completion and suggestions' },
-      { name: 'AI Debugging', level: 90, description: 'Rapid bug isolation and resolution' },
+      { name: 'Gemini', level: 90, description: 'Advanced model context window optimization' },
+      { name: 'AI Workflow', level: 92, description: 'Optimized engineering productivity' },
     ],
   },
 ]
 
 // Hero floating tech pills
 export const heroTechPills = [
-  'React', 'NestJS', 'PostgreSQL', 'Prisma', 'TailwindCSS',
-  'DigitalOcean', 'TypeScript', 'Framer Motion',
+  'React.js', 'Nest.js', 'PostgreSQL', 'Prisma', 'Drizzle', 'TailwindCSS',
+  'Socket.IO', 'TypeScript', 'DigitalOcean',
 ]
