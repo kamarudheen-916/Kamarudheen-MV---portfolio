@@ -1,0 +1,6 @@
+# Instructions for Developer
+
+1. Take a high-resolution screenshot or mockup of the project (Bizzatom).
+2. Name the image "preview.jpg".
+3. Place it exactly in this folder (`/public/projects/bizzatom/`).
+4. The web app will automatically detect and display it as the primary visual in the portfolio.

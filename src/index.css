@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   DESIGN TOKENS & GLOBAL RESETS
+   ============================================================ */
+:root {
+  --bg-primary: #050816;
+  --bg-secondary: #0B1120;
+  --accent: #38BDF8;
+  --accent-dim: rgba(56, 189, 248, 0.18);
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --border: rgba(255, 255, 255, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.6);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(56, 189, 248, 0.25);
+  color: #F8FAFC;
+}
+
+/* ============================================================
+   TYPOGRAPHY UTILITIES
+   ============================================================ */
+.font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #F8FAFC 0%, #38BDF8 60%, #7DD3FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-subtle {
+  background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   GLASS MORPHISM
+   ============================================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(11, 17, 32, 0.85);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* ============================================================
+   GLOW EFFECTS
+   ============================================================ */
+.glow-accent {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.2), 0 0 60px rgba(56, 189, 248, 0.08);
+}
+
+.glow-text {
+  text-shadow: 0 0 40px rgba(56, 189, 248, 0.5);
+}
+
+.glow-border {
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.1), inset 0 0 20px rgba(56, 189, 248, 0.03);
+}
+
+/* ============================================================
+   ANIMATED BACKGROUND GRID
+   ============================================================ */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ============================================================
+   SECTION SPACING & TRANSITIONS
+   ============================================================ */
+.section-padding {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Gradient fade between sections */
+.section-fade-top {
+  background: linear-gradient(to bottom, var(--bg-primary) 0%, transparent 100%);
+}
+.section-fade-bottom {
+  background: linear-gradient(to top, var(--bg-primary) 0%, transparent 100%);
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.timeline-line {
+  background: linear-gradient(to bottom, transparent, rgba(56, 189, 248, 0.4), transparent);
+}
+
+/* ============================================================
+   CARD HOVER LIFT
+   ============================================================ */
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(56, 189, 248, 0.12);
+}
+
+/* ============================================================
+   BUTTON GLOW ANIMATION
+   ============================================================ */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(56, 189, 248, 0.03));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover::before {
+  opacity: 1;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.35), 0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   PARTICLE CANVAS
+   ============================================================ */
+#particles-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================================
+   TECH PILL HOVER
+   ============================================================ */
+.tech-pill {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+.tech-pill:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   PROJECT CARD IMAGE
+   ============================================================ */
+.project-img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .project-img {
+  transform: scale(1.06);
+}
+.project-overlay {
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .project-overlay {
+  opacity: 1;
+}

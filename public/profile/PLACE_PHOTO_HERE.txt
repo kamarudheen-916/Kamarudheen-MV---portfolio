@@ -1,0 +1,6 @@
+# Instructions for Developer
+
+1. Select your professional headshot (preferably 1:1 square aspect ratio).
+2. Name the file exactly: "profile-placeholder.png"
+3. Replace this folder contents with that image file.
+4. The portfolio hero will dynamically reload to use your face.
